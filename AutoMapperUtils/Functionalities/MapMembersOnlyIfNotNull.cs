@@ -26,6 +26,7 @@ namespace LambdaTheDev.AutoMapperUtils.Functionalities
         
         // This method applies this functionality on entire model
         // It literally iterates through all source properties & applies method above
+        // Note: If someone has a better name for this method, inform me
         public static IMappingExpression<TSource, TDestination> CreateMappingsOnlyIfNotNull<TSource, TDestination>(
             this IMappingExpression<TSource, TDestination> mapper)
         {
