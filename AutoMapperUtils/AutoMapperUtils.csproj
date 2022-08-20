@@ -6,6 +6,15 @@
         <Nullable>enable</Nullable>
         <RootNamespace>LambdaTheDev.AutoMapperUtils</RootNamespace>
         <LangVersion>8</LangVersion>
+        <Title>AutoMapperUtils</Title>
+        <Authors>LambdaTheDev</Authors>
+        <Description>Utility library for AutoMapper that wraps some more advanced functionalities.</Description>
+        <Copyright>LambdaTheDev</Copyright>
+        <PackageProjectUrl>https://github.com/LambdaTheDev/AutoMapperUtils</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/LambdaTheDev/AutoMapperUtils/blob/main/LICENSE.m</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/LambdaTheDev/AutoMapperUtils</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>automapper,mapping,extensions,utils</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
