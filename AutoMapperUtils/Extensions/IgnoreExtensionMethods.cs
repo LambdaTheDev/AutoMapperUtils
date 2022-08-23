@@ -21,6 +21,13 @@ namespace LambdaTheDev.AutoMapperUtils.Extensions
         }
 
         public static IMappingExpression<TSource, TDestination> DoNotValidateSrcMember<TSource, TDestination>(
+            this IMappingExpression<TSource, TDestination> mapper,
+            Expression<Func<TSource, object?>> ignoredMember)
+        {
+            return mapper.ForSourceMember(ignoredMember, x => x.DoNotValidate());
+        }
+        
+        public static IMappingExpression<TSource, TDestination> DoNotValidateSrcMember<TSource, TDestination>(
             this IMappingExpression<TSource, TDestination> mapper, string ignoredSrcMemberName)
         {
             return mapper.ForSourceMember(ignoredSrcMemberName, opt => opt.DoNotValidate());

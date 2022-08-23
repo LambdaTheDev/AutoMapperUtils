@@ -30,7 +30,7 @@ namespace LambdaTheDev.AutoMapperUtils.Functionalities
         public static IMappingExpression<TSource, TDestination> CreateMappingsOnlyIfNotNull<TSource, TDestination>(
             this IMappingExpression<TSource, TDestination> mapper)
         {
-            foreach (var property in typeof(TSource).GetProperties())
+            foreach (var property in typeof(TDestination).GetProperties())
                 mapper.MapMemberIfNotNull(property.Name);
 
             return mapper;
