@@ -15,7 +15,7 @@
         <RepositoryUrl>https://github.com/LambdaTheDev/AutoMapperUtils</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>automapper,mapping,extensions,utils</PackageTags>
-        <PackageVersion>1.1.0</PackageVersion>
+        <PackageVersion>1.1.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
